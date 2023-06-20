@@ -1,0 +1,515 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTokenCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "minter",
+          "type": "address"
+        }
+      ],
+      "name": "hasMinted",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mintNft",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "burn(uint256)": "42966c68",
+    "getTokenCounter()": "6e02007d",
+    "hasMinted(address)": "38e21cce",
+    "mintNft()": "c2229fea"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTokenCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"minter\",\"type\":\"address\"}],\"name\":\"hasMinted\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mintNft\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"burn(uint256)\":{\"notice\":\"allows an owner of the NFT to burn it.\"},\"getTokenCounter()\":{\"notice\":\"gets the tokenCounter.\"},\"mintNft()\":{\"notice\":\"allows an address to mint an NFT.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/INTNFT.sol\":\"INTNFT\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@opensezppling/=lib/openzeppelin-contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/interfaces/INTNFT.sol\":{\"keccak256\":\"0x44d965014a03a52c8ef84c833bcf20ceaef54b51f5ef190f0a54f9b6fb1ea93c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8358427b088d9a3d7b1c83b5b74604e549a539bbe9c7edb76d36eb69ad8d122c\",\"dweb:/ipfs/QmYaZEX3isefF8RP1n9XrNuiQhEqXPRVjSawBkbHjcMRS1\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "burn"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTokenCounter",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "minter",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hasMinted",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "mintNft",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "burn(uint256)": {
+            "notice": "allows an owner of the NFT to burn it."
+          },
+          "getTokenCounter()": {
+            "notice": "gets the tokenCounter."
+          },
+          "mintNft()": {
+            "notice": "allows an address to mint an NFT."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@opensezppling/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/INTNFT.sol": "INTNFT"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/INTNFT.sol": {
+        "keccak256": "0x44d965014a03a52c8ef84c833bcf20ceaef54b51f5ef190f0a54f9b6fb1ea93c",
+        "urls": [
+          "bzz-raw://8358427b088d9a3d7b1c83b5b74604e549a539bbe9c7edb76d36eb69ad8d122c",
+          "dweb:/ipfs/QmYaZEX3isefF8RP1n9XrNuiQhEqXPRVjSawBkbHjcMRS1"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/INTNFT.sol",
+    "id": 4274,
+    "exportedSymbols": {
+      "INTNFT": [
+        4273
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:463:16",
+    "nodes": [
+      {
+        "id": 4247,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:16",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 4273,
+        "nodeType": "ContractDefinition",
+        "src": "58:438:16",
+        "nodes": [
+          {
+            "id": 4253,
+            "nodeType": "FunctionDefinition",
+            "src": "131:46:16",
+            "nodes": [],
+            "documentation": {
+              "id": 4248,
+              "nodeType": "StructuredDocumentation",
+              "src": "81:45:16",
+              "text": "@notice allows an address to mint an NFT."
+            },
+            "functionSelector": "c2229fea",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintNft",
+            "nameLocation": "140:7:16",
+            "parameters": {
+              "id": 4249,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:2:16"
+            },
+            "returnParameters": {
+              "id": 4252,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4251,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4253,
+                  "src": "168:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4250,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:9:16"
+            },
+            "scope": 4273,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4259,
+            "nodeType": "FunctionDefinition",
+            "src": "238:37:16",
+            "nodes": [],
+            "documentation": {
+              "id": 4254,
+              "nodeType": "StructuredDocumentation",
+              "src": "183:50:16",
+              "text": "@notice allows an owner of the NFT to burn it."
+            },
+            "functionSelector": "42966c68",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nameLocation": "247:4:16",
+            "parameters": {
+              "id": 4257,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4256,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "257:7:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4259,
+                  "src": "252:12:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4255,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "252:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "251:14:16"
+            },
+            "returnParameters": {
+              "id": 4258,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "274:0:16"
+            },
+            "scope": 4273,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4265,
+            "nodeType": "FunctionDefinition",
+            "src": "368:56:16",
+            "nodes": [],
+            "documentation": {
+              "id": 4260,
+              "nodeType": "StructuredDocumentation",
+              "src": "329:34:16",
+              "text": "@notice gets the tokenCounter."
+            },
+            "functionSelector": "6e02007d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTokenCounter",
+            "nameLocation": "377:15:16",
+            "parameters": {
+              "id": 4261,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "392:2:16"
+            },
+            "returnParameters": {
+              "id": 4264,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4263,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4265,
+                  "src": "418:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4262,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "418:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "417:6:16"
+            },
+            "scope": 4273,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4272,
+            "nodeType": "FunctionDefinition",
+            "src": "430:64:16",
+            "nodes": [],
+            "functionSelector": "38e21cce",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hasMinted",
+            "nameLocation": "439:9:16",
+            "parameters": {
+              "id": 4268,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4267,
+                  "mutability": "mutable",
+                  "name": "minter",
+                  "nameLocation": "457:6:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4272,
+                  "src": "449:14:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4266,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "448:16:16"
+            },
+            "returnParameters": {
+              "id": 4271,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4270,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4272,
+                  "src": "488:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4269,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "488:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "487:6:16"
+            },
+            "scope": 4273,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "INTNFT",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          4273
+        ],
+        "name": "INTNFT",
+        "nameLocation": "68:6:16",
+        "scope": 4274,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 16
+}

@@ -1,0 +1,1642 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "dataProvider",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "decryptMyData",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "walletAddress",
+          "type": "address"
+        }
+      ],
+      "name": "generateHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "dataProviderAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getEthHashedData",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "dataProvider",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "kycField",
+          "type": "string"
+        }
+      ],
+      "name": "getRequestedDataFromProvider",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_father_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_mother_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_grandFather_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_phone_number",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_dob",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_blood_group",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_citizenship_number",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_pan_number",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_location",
+          "type": "string"
+        }
+      ],
+      "name": "setUserData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "dataRequester",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "kycField",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "storeRsaEncryptedinRetrievable",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "kycField",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "updateKYCDetails",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "walletAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "decryptMyData(address,string)": "d822f825",
+    "generateHash(address)": "21a3f733",
+    "getEthHashedData(address)": "ff841e0f",
+    "getRequestedDataFromProvider(address,string)": "be11ff70",
+    "setUserData(string,string,string,string,string,string,string,string,string,string)": "65ca9ba1",
+    "storeRsaEncryptedinRetrievable(address,string,string)": "517dfd5a",
+    "updateKYCDetails(string,string)": "51f1dd77",
+    "verify(address,bytes)": "4a41d1ac"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"dataProvider\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"}],\"name\":\"decryptMyData\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"walletAddress\",\"type\":\"address\"}],\"name\":\"generateHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"dataProviderAddress\",\"type\":\"address\"}],\"name\":\"getEthHashedData\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"dataProvider\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"kycField\",\"type\":\"string\"}],\"name\":\"getRequestedDataFromProvider\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_father_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_mother_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_grandFather_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_phone_number\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_dob\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_blood_group\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_citizenship_number\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_pan_number\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_location\",\"type\":\"string\"}],\"name\":\"setUserData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"dataRequester\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"kycField\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"}],\"name\":\"storeRsaEncryptedinRetrievable\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"kycField\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"}],\"name\":\"updateKYCDetails\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"walletAddress\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"name\":\"verify\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"storeRsaEncryptedinRetrievable(address,string,string)\":{\"params\":{\"data\":\"represents encrypted data.\",\"dataRequester\":\"represents the address of the requester.\",\"kycField\":\"This represent the specific field of KYC form such as name, dob and so forth\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"decryptMyData(address,string)\":{\"notice\":\"GEtUserDAta is function which decrypts the AES encrypted data.\"},\"generateHash(address)\":{\"notice\":\"generateHash is call the getEthSignedMessageHash and retun the hashed signature of\"},\"getEthHashedData(address)\":{\"notice\":\"getEthhashedData is getter function which react the hashData from storage variable who is mapped through address\"},\"getRequestedDataFromProvider(address,string)\":{\"notice\":\"getRequestedDataFromProvider is function where data requester decrypts data using his/her private key.\"},\"setUserData(string,string,string,string,string,string,string,string,string,string)\":{\"notice\":\"SetUserData is used to set User data and mapped to it address\"},\"storeRsaEncryptedinRetrievable(address,string,string)\":{\"notice\":\"storeRsaEncryptedinRetrievable is function where data provider encrypts his/her data using requester's public key.\"},\"updateKYCDetails(string,string)\":{\"notice\":\"UpdateKycDetails is function which updatee the specific KYC data.\"},\"verify(address,bytes)\":{\"notice\":\"Verify whether the Kyc details is signed by the right DataProviderAddress\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IKYC.sol\":\"IKYC\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@opensezppling/=lib/openzeppelin-contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/interfaces/IKYC.sol\":{\"keccak256\":\"0x642afd4329508bdb975ef8ed52f318538c345e367a72acac1e7311180482ccbd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://866414d964442109d3d97f096e74c7ebe6dd796ef7e93f18612c53941fe06ee3\",\"dweb:/ipfs/QmNLqkELYu5J3xEsT2Err5dPy1EqXHmuLWMW1yEyXrawxo\"]},\"src/libraries/Types.sol\":{\"keccak256\":\"0x45cef49bd2ed2ad8b933f62d6b1dad0aca8da2fac72121b452323d13f119b4b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ed4034f0f1ced7a46fa4564f9369d41d18991bafed436271a03f95fb3c8ebc2a\",\"dweb:/ipfs/QmTCyu3HknJiZFmfJBrNJ8BJQoXoVAAafHtrzydn6NYoBk\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "dataProvider",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "data",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "decryptMyData",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "walletAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "generateHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "dataProviderAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEthHashedData",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "dataProvider",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "kycField",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRequestedDataFromProvider",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_father_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_mother_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_grandFather_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_phone_number",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_dob",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_blood_group",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_citizenship_number",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_pan_number",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_location",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setUserData"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "dataRequester",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "kycField",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "data",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "storeRsaEncryptedinRetrievable"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "kycField",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "data",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateKYCDetails"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "walletAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "verify",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "storeRsaEncryptedinRetrievable(address,string,string)": {
+            "params": {
+              "data": "represents encrypted data.",
+              "dataRequester": "represents the address of the requester.",
+              "kycField": "This represent the specific field of KYC form such as name, dob and so forth"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "decryptMyData(address,string)": {
+            "notice": "GEtUserDAta is function which decrypts the AES encrypted data."
+          },
+          "generateHash(address)": {
+            "notice": "generateHash is call the getEthSignedMessageHash and retun the hashed signature of"
+          },
+          "getEthHashedData(address)": {
+            "notice": "getEthhashedData is getter function which react the hashData from storage variable who is mapped through address"
+          },
+          "getRequestedDataFromProvider(address,string)": {
+            "notice": "getRequestedDataFromProvider is function where data requester decrypts data using his/her private key."
+          },
+          "setUserData(string,string,string,string,string,string,string,string,string,string)": {
+            "notice": "SetUserData is used to set User data and mapped to it address"
+          },
+          "storeRsaEncryptedinRetrievable(address,string,string)": {
+            "notice": "storeRsaEncryptedinRetrievable is function where data provider encrypts his/her data using requester's public key."
+          },
+          "updateKYCDetails(string,string)": {
+            "notice": "UpdateKycDetails is function which updatee the specific KYC data."
+          },
+          "verify(address,bytes)": {
+            "notice": "Verify whether the Kyc details is signed by the right DataProviderAddress"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@opensezppling/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/IKYC.sol": "IKYC"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/IKYC.sol": {
+        "keccak256": "0x642afd4329508bdb975ef8ed52f318538c345e367a72acac1e7311180482ccbd",
+        "urls": [
+          "bzz-raw://866414d964442109d3d97f096e74c7ebe6dd796ef7e93f18612c53941fe06ee3",
+          "dweb:/ipfs/QmNLqkELYu5J3xEsT2Err5dPy1EqXHmuLWMW1yEyXrawxo"
+        ],
+        "license": "MIT"
+      },
+      "src/libraries/Types.sol": {
+        "keccak256": "0x45cef49bd2ed2ad8b933f62d6b1dad0aca8da2fac72121b452323d13f119b4b2",
+        "urls": [
+          "bzz-raw://ed4034f0f1ced7a46fa4564f9369d41d18991bafed436271a03f95fb3c8ebc2a",
+          "dweb:/ipfs/QmTCyu3HknJiZFmfJBrNJ8BJQoXoVAAafHtrzydn6NYoBk"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IKYC.sol",
+    "id": 4246,
+    "exportedSymbols": {
+      "IKYC": [
+        4245
+      ],
+      "Types": [
+        4361
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:2281:15",
+    "nodes": [
+      {
+        "id": 4155,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:15",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 4156,
+        "nodeType": "ImportDirective",
+        "src": "58:32:15",
+        "nodes": [],
+        "absolutePath": "src/libraries/Types.sol",
+        "file": "../libraries/Types.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 4246,
+        "sourceUnit": 4362,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 4245,
+        "nodeType": "ContractDefinition",
+        "src": "92:2222:15",
+        "nodes": [
+          {
+            "id": 4180,
+            "nodeType": "FunctionDefinition",
+            "src": "191:390:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4157,
+              "nodeType": "StructuredDocumentation",
+              "src": "113:73:15",
+              "text": "@notice SetUserData is used to set User data and mapped to it address"
+            },
+            "functionSelector": "65ca9ba1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUserData",
+            "nameLocation": "200:11:15",
+            "parameters": {
+              "id": 4178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4159,
+                  "mutability": "mutable",
+                  "name": "_name",
+                  "nameLocation": "235:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "221:19:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4158,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4161,
+                  "mutability": "mutable",
+                  "name": "_father_name",
+                  "nameLocation": "264:12:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "250:26:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4160,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "250:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4163,
+                  "mutability": "mutable",
+                  "name": "_mother_name",
+                  "nameLocation": "300:12:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "286:26:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4162,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "286:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4165,
+                  "mutability": "mutable",
+                  "name": "_grandFather_name",
+                  "nameLocation": "336:17:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "322:31:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4164,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "322:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4167,
+                  "mutability": "mutable",
+                  "name": "_phone_number",
+                  "nameLocation": "377:13:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "363:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4166,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "363:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4169,
+                  "mutability": "mutable",
+                  "name": "_dob",
+                  "nameLocation": "414:4:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "400:18:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4168,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "400:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4171,
+                  "mutability": "mutable",
+                  "name": "_blood_group",
+                  "nameLocation": "442:12:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "428:26:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4170,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "428:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4173,
+                  "mutability": "mutable",
+                  "name": "_citizenship_number",
+                  "nameLocation": "478:19:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "464:33:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4172,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4175,
+                  "mutability": "mutable",
+                  "name": "_pan_number",
+                  "nameLocation": "521:11:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "507:25:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4174,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "507:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4177,
+                  "mutability": "mutable",
+                  "name": "_location",
+                  "nameLocation": "556:9:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4180,
+                  "src": "542:23:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4176,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "542:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:360:15"
+            },
+            "returnParameters": {
+              "id": 4179,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "580:0:15"
+            },
+            "scope": 4245,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4190,
+            "nodeType": "FunctionDefinition",
+            "src": "677:87:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4181,
+              "nodeType": "StructuredDocumentation",
+              "src": "587:85:15",
+              "text": "@notice Verify whether the Kyc details is signed by the right DataProviderAddress"
+            },
+            "functionSelector": "4a41d1ac",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verify",
+            "nameLocation": "686:6:15",
+            "parameters": {
+              "id": 4186,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4183,
+                  "mutability": "mutable",
+                  "name": "walletAddress",
+                  "nameLocation": "701:13:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4190,
+                  "src": "693:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4182,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4185,
+                  "mutability": "mutable",
+                  "name": "signature",
+                  "nameLocation": "729:9:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4190,
+                  "src": "716:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 4184,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "716:5:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "692:47:15"
+            },
+            "returnParameters": {
+              "id": 4189,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4188,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4190,
+                  "src": "758:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4187,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "758:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "757:6:15"
+            },
+            "scope": 4245,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4198,
+            "nodeType": "FunctionDefinition",
+            "src": "869:72:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4191,
+              "nodeType": "StructuredDocumentation",
+              "src": "770:94:15",
+              "text": "@notice generateHash is call the getEthSignedMessageHash and retun the hashed signature of"
+            },
+            "functionSelector": "21a3f733",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "generateHash",
+            "nameLocation": "878:12:15",
+            "parameters": {
+              "id": 4194,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4193,
+                  "mutability": "mutable",
+                  "name": "walletAddress",
+                  "nameLocation": "899:13:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4198,
+                  "src": "891:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4192,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "891:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "890:23:15"
+            },
+            "returnParameters": {
+              "id": 4197,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4196,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4198,
+                  "src": "932:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4195,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "932:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "931:9:15"
+            },
+            "scope": 4245,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4206,
+            "nodeType": "FunctionDefinition",
+            "src": "1076:87:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4199,
+              "nodeType": "StructuredDocumentation",
+              "src": "947:124:15",
+              "text": "@notice getEthhashedData is getter function which react the hashData from storage variable who is mapped through address"
+            },
+            "functionSelector": "ff841e0f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEthHashedData",
+            "nameLocation": "1085:16:15",
+            "parameters": {
+              "id": 4202,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4201,
+                  "mutability": "mutable",
+                  "name": "dataProviderAddress",
+                  "nameLocation": "1110:19:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4206,
+                  "src": "1102:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4200,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1102:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1101:29:15"
+            },
+            "returnParameters": {
+              "id": 4205,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4204,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4206,
+                  "src": "1154:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4203,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1154:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1153:9:15"
+            },
+            "scope": 4245,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4216,
+            "nodeType": "FunctionDefinition",
+            "src": "1248:125:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4207,
+              "nodeType": "StructuredDocumentation",
+              "src": "1169:74:15",
+              "text": "@notice GEtUserDAta is function which decrypts the AES encrypted data."
+            },
+            "functionSelector": "d822f825",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decryptMyData",
+            "nameLocation": "1257:13:15",
+            "parameters": {
+              "id": 4212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4209,
+                  "mutability": "mutable",
+                  "name": "dataProvider",
+                  "nameLocation": "1288:12:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4216,
+                  "src": "1280:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4208,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1280:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4211,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "1324:4:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4216,
+                  "src": "1310:18:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4210,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1310:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1270:64:15"
+            },
+            "returnParameters": {
+              "id": 4215,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4214,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4216,
+                  "src": "1358:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4213,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1358:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1357:15:15"
+            },
+            "scope": 4245,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4224,
+            "nodeType": "FunctionDefinition",
+            "src": "1461:79:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4217,
+              "nodeType": "StructuredDocumentation",
+              "src": "1379:77:15",
+              "text": "@notice UpdateKycDetails is function which updatee the specific KYC data."
+            },
+            "functionSelector": "51f1dd77",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateKYCDetails",
+            "nameLocation": "1470:16:15",
+            "parameters": {
+              "id": 4222,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4219,
+                  "mutability": "mutable",
+                  "name": "kycField",
+                  "nameLocation": "1501:8:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4224,
+                  "src": "1487:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4218,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1487:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4221,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "1525:4:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4224,
+                  "src": "1511:18:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4220,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1511:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1486:44:15"
+            },
+            "returnParameters": {
+              "id": 4223,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1539:0:15"
+            },
+            "scope": 4245,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4234,
+            "nodeType": "FunctionDefinition",
+            "src": "1897:146:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4225,
+              "nodeType": "StructuredDocumentation",
+              "src": "1546:346:15",
+              "text": "@notice storeRsaEncryptedinRetrievable is function where data provider encrypts his/her data using requester's public key.\n @param dataRequester represents the address of the requester.\n @param  kycField This represent the specific field of KYC form such as name, dob and so forth\n @param  data represents encrypted data."
+            },
+            "functionSelector": "517dfd5a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "storeRsaEncryptedinRetrievable",
+            "nameLocation": "1906:30:15",
+            "parameters": {
+              "id": 4232,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4227,
+                  "mutability": "mutable",
+                  "name": "dataRequester",
+                  "nameLocation": "1954:13:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4234,
+                  "src": "1946:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4226,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1946:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4229,
+                  "mutability": "mutable",
+                  "name": "kycField",
+                  "nameLocation": "1991:8:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4234,
+                  "src": "1977:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4228,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1977:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4231,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2023:4:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4234,
+                  "src": "2009:18:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4230,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2009:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1936:97:15"
+            },
+            "returnParameters": {
+              "id": 4233,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2042:0:15"
+            },
+            "scope": 4245,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 4244,
+            "nodeType": "FunctionDefinition",
+            "src": "2168:144:15",
+            "nodes": [],
+            "documentation": {
+              "id": 4235,
+              "nodeType": "StructuredDocumentation",
+              "src": "2049:114:15",
+              "text": "@notice getRequestedDataFromProvider is function where data requester decrypts data using his/her private key."
+            },
+            "functionSelector": "be11ff70",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRequestedDataFromProvider",
+            "nameLocation": "2177:28:15",
+            "parameters": {
+              "id": 4240,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4237,
+                  "mutability": "mutable",
+                  "name": "dataProvider",
+                  "nameLocation": "2223:12:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4244,
+                  "src": "2215:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4236,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2215:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4239,
+                  "mutability": "mutable",
+                  "name": "kycField",
+                  "nameLocation": "2259:8:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4244,
+                  "src": "2245:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4238,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2245:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2205:68:15"
+            },
+            "returnParameters": {
+              "id": 4243,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4242,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4244,
+                  "src": "2297:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4241,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2297:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2296:15:15"
+            },
+            "scope": 4245,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IKYC",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          4245
+        ],
+        "name": "IKYC",
+        "nameLocation": "102:4:15",
+        "scope": 4246,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 15
+}
