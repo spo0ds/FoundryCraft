@@ -244,7 +244,8 @@ contract KYCTest is Test, OxAuth {
 
         // Mint NFT
         nft.mintNft();
-
+        vm.prank(address(2));
+        nft.mintNft();
         // Prank address(1) again
         vm.prank(address(1));
 
@@ -268,5 +269,47 @@ contract KYCTest is Test, OxAuth {
         kyc.grantAccessToRequester(address(2), "name");
         vm.prank(address(1));
         kyc.storeRsaEncryptedinRetrievable(address(2), kycField, "Owner");
+        vm.prank(address(2));
+        string memory retrievedData = kyc.getRequestedDataFromProvider(
+            address(1),
+            kycField
+        );
+        assertEq(retrievedData, "Owner");
+    }
+
+    function testgetRequestedDataFromProvider() public {
+        string memory kycField = "name";
+        vm.prank(address(2));
+        nft.mintNft();
+        vm.prank(address(2));
+        vm.expectRevert(KYC__NotYetApprovedToView.selector);
+        kyc.getRequestedDataFromProvider(address(1), kycField);
+        vm.prank(address(1));
+        nft.mintNft();
+        vm.prank(address(1));
+        kyc.setUserData(
+            "Owner",
+            "Bob",
+            "Carol",
+            "Dave",
+            "555-555-1234",
+            "01/01/2000",
+            "123456789",
+            "ABCDE1234F",
+            "New York",
+            "true"
+        );
+        vm.prank(address(2));
+        kyc.requestApproveFromDataProvider(address(1), kycField);
+        vm.prank(address(1));
+        kyc.grantAccessToRequester(address(2), kycField);
+        vm.prank(address(1));
+        kyc.storeRsaEncryptedinRetrievable(address(2), kycField, "owner");
+        vm.prank(address(2));
+        string memory retrievedData = kyc.getRequestedDataFromProvider(
+            address(1),
+            kycField
+        );
+        assertEq(retrievedData, "owner");
     }
 }
