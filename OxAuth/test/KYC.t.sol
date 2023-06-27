@@ -312,4 +312,63 @@ contract KYCTest is Test, OxAuth {
         );
         assertEq(retrievedData, "owner");
     }
+
+    function testGenerateHash() public {
+        string memory name = "John Doe";
+        string memory fatherName = "Michael Doe";
+        string memory motherName = "Jane Doe";
+        string memory grandFatherName = "Robert Doe";
+        string memory phoneNumber = "1234567890";
+        string memory dob = "2000-01-01";
+        string memory bloodGroup = "A+";
+        string memory citizenshipNumber = "1234567890";
+        string memory panNumber = "ABCDE1234F";
+        string memory location = "Sample Address";
+
+        // Prank address(1)
+        vm.prank(address(1));
+
+        // Mint NFT
+        nft.mintNft();
+        vm.prank(address(2));
+        nft.mintNft();
+        // Prank address(1) again
+        vm.prank(address(1));
+
+        // Set user data
+        kyc.setUserData(
+            name,
+            fatherName,
+            motherName,
+            grandFatherName,
+            phoneNumber,
+            dob,
+            bloodGroup,
+            citizenshipNumber,
+            panNumber,
+            location
+        );
+        vm.prank(address(1));
+        // Generate signed message hash
+        bytes32 storedHash = kyc.generateHash(address(1));
+        vm.prank(address(1));
+        // Check if the hash is valid
+        bytes32 messageHash = keccak256(
+            abi.encodePacked(
+                name,
+                fatherName,
+                motherName,
+                grandFatherName,
+                phoneNumber,
+                dob,
+                citizenshipNumber,
+                panNumber,
+                location
+            )
+        );
+        bytes32 expectedHash = keccak256(
+            abi.encodePacked("\x19Ethereum Signed Message:\n32", messageHash)
+        );
+        assertEq(storedHash, expectedHash);
+    }
 }
